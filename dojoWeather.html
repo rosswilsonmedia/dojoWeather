@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Weather</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dojoWeather.css">
+</head>
+<body>
+    <div class="header">
+        <h1>DojoWeather</h1>
+        <div class="nav">
+            <a href="#" onclick="loading()">Burbank</a>
+            <a href="#" onclick="loading()">Chicago</a>
+            <a href="#" onclick="loading()">Dallas</a>
+        </div>
+    </div>
+    <div class="pageContainer">
+        <div class="pageHeader">
+            <h2>San Jose</h2>
+            <div class="unitSelect">
+                <p>show temperature in</p>
+                <select onchange="changeTemperature(this)">
+                    <option value="celsius">&deg;C</option>
+                    <option value="fahrenheit" selected aria-selected="true">&deg;F</option>
+                </select>
+            </div>
+        </div>
+        <hr>
+        <div class="weather">
+            <div class="weatherPanel">
+                <h3>Today</h3>
+                <img src="assets/some_rain.png" alt="some rain">
+                <p>some rain</p>
+                <div class="forecast">
+                    <h4 class="high"><span>75</span>&deg;</h4>
+                    <h4 class="low"><span>65</span>&deg;</h4>
+                </div>
+            </div>
+            <div class="weatherPanel">
+                <h3>Tomorrow</h3>
+                <img src="assets/some_sun.png" alt="some sun">
+                <p>some sun</p>
+                <div class="forecast">
+                    <h4 class="high"><span>80</span>&deg;</h4>
+                    <h4 class="low"><span>66</span>&deg;</h4>
+                </div>
+            </div>
+            <div class="weatherPanel">
+                <h3>Friday</h3>
+                <img src="assets/some_rain.png" alt="some rain">
+                <p>some rain</p>
+                <div class="forecast">
+                    <h4 class="high"><span>69</span>&deg;</h4>
+                    <h4 class="low"><span>61</span>&deg;</h4>
+                </div>
+            </div>
+            <div class="weatherPanel">
+                <h3>Saturday</h3>
+                <img src="assets/some_sun.png" alt="some sun">
+                <p>some sun</p>
+                <div class="forecast">
+                    <h4 class="high"><span>78</span>&deg;</h4>
+                    <h4 class="low"><span>70</span>&deg;</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cookiePolicy">
+        <img src="assets/cookie.png" alt="cookie">
+        <div class="cookieInfo">
+            <h3>Stop! Cookie time</h3>
+            <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a></p>
+        </div>
+        <button onclick="closeCookiePolicy(this)">I Accept</button>
+    </div>
+    <script type="text/javascript" src="dojoWeather.js"></script>
+</body>
+</html>
